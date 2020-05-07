@@ -32,6 +32,10 @@ class DbConnection {
     });
   }
 
+  close() {
+    this.connection.end();
+  }
+
 }
 
 export default DbConnection;
