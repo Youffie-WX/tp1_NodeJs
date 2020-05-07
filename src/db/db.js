@@ -8,7 +8,7 @@ class DbConnection {
       host: 'localhost',
       user: 'root',
       password: 'root',
-      database: 'mon_schema',
+      database: 'exercice_final_node',
       port: 3306
     });
     this.autoclose = autoclose;
