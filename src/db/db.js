@@ -17,7 +17,7 @@ class DbConnection {
   performQuery(request, values=[]) {
     return new Promise((resolve, reject) => {
       console.warn(request);
-      this.connection.query(request, values, (err, rows, fields) => {
+     let query = this.connection.query(request, values, (err, rows, fields) => {
         if (err) {
           if (this.autoclose) {
             this.connection.end();
@@ -29,6 +29,7 @@ class DbConnection {
         }
         return resolve({ rows, fields });
       });
+      console.log(query.sql)
     });
   }
 
