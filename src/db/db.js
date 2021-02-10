@@ -7,8 +7,8 @@ class DbConnection {
     this.connection = mysql.createConnection({
       host: 'localhost',
       user: 'root',
-      password: 'root',
-      database: 'mon_schema',
+      password: '',
+      database: 'Ex1NodeJs',
       port: 3306
     });
     this.autoclose = autoclose;
