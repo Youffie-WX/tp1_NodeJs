@@ -10,6 +10,7 @@ const api = () => {
   routes.get('/', rootController.index);
   routes.get('/products', productsController.getProducts);
   routes.put('/product', productsController.insertProduct);
+  routes.post('/product/:id', productsController.updateProduct);
 
   return routes;
 };

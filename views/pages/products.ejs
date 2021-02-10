@@ -12,8 +12,8 @@
 
 <% products.forEach( product => { %>
 <ul>
-    <h4><%= product.name %></h4>
-    <li> Stocks :  <%= product.stock %>,
+    <h4>N° produit <%= product.id %> nom: <%= product.name %></h4>
+    <li> Stocks :  <%= product.stock %>
     <li> Prix :  <%= product.price %>    </li>
 </ul>
 <% }) %>
@@ -21,8 +21,8 @@
 <h2>Avis</h2>
 <% reviews.forEach( review => { %>
     <ul>
-        <li> Produits :  <%= review.id_product %>,
-        <li> Titre :  <%= review.title %>,
+        <li> Produits :  <%= review.id_product %>
+        <li> Titre :  <%= review.title %>
         <li> Contenu :  <%= review.content %>    </li>
     </ul>
 <% }) %>
